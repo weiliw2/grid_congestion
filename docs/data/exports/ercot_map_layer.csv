@@ -1,0 +1,4 @@
+market,node_id,node_name,zone,latitude,longitude,observations,avg_lmp,avg_congestion,avg_abs_congestion,max_abs_congestion,avg_price_separation,avg_node_to_hub_spread,avg_abs_node_to_hub_spread,negative_price_frequency,hub_lmp_source,persistent_congestion_score,congestion_zscore,map_size,hover_label
+ERCOT,ERCOT_B,West Export,West,31.7619,-106.485,2,33.85,12.9,12.9,13.4,10.4,10.4,10.4,0.0,configured:node_name,12.549999999999999,1.3103222257362377,37.61,West Export (ERCOT_B)
+ERCOT,ERCOT_C,Houston Load,Houston,29.7604,-95.3698,2,27.4,6.45,6.45,6.7,10.4,3.950000000000001,3.950000000000001,0.0,configured:node_name,6.0249999999999995,-0.19440982577689,23.255000000000003,Houston Load (ERCOT_C)
+ERCOT,ERCOT_A,North Hub,North,32.7767,-96.797,2,23.45,2.5,2.5,4.0,10.4,0.0,0.0,0.0,configured:node_name,2.45,-1.115912399959348,15.39,North Hub (ERCOT_A)

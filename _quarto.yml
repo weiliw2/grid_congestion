@@ -1,0 +1,28 @@
+project:
+  type: website
+  output-dir: docs
+  resources:
+    - maps/*.html
+    - figures/*
+    - data/exports/*.csv
+    - reports/final_report.md
+
+website:
+  title: "PJM Grid Congestion Monitor"
+  description: "A PJM nodal price analysis focused on congestion, spread persistence, renewable stress periods, and grid investment implications."
+  page-footer:
+    background: "#ffffff"
+    foreground: "#5a4332"
+    left: "PJM Grid Congestion Monitor"
+    right: "Built with Quarto, Python, Plotly, and GridStatus"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+    smooth-scroll: true
+    link-external-newwindow: true
+
+execute:
+  freeze: auto

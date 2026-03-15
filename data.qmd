@@ -1,0 +1,27 @@
+---
+title: "PJM Data and Downloads"
+---
+
+## Data sources
+
+The live ingestion layer is built around `gridstatus`, which provides a unified interface to:
+
+- PJM LMP and load data
+- interconnection queue snapshots
+
+The website itself publishes processed analytical layers, not full raw ISO dumps.
+
+## Downloads
+
+- [Market summary](data/exports/market_summary.csv)
+- [Node summary](data/exports/node_summary.csv)
+- [Stress events](data/exports/stress_events.csv)
+- [Renewable impact](data/exports/renewable_impact.csv)
+- [Harmonized feature layer](data/exports/harmonized_features.csv)
+- [PJM map layer CSV](data/exports/pjm_map_layer.csv)
+- [PJM animation layer CSV](data/exports/pjm_animation_layer.csv)
+- [Latest markdown report](reports/final_report.md)
+
+## Repo notes
+
+For reproducibility, the Python source lives in the same repository as this Quarto site. The site is intended to be regenerated after the analysis pipeline refreshes the latest exports and maps.

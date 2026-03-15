@@ -1,0 +1,366 @@
+[
+  {
+    "objectID": "reports/bnef_style_report_template.html",
+    "href": "reports/bnef_style_report_template.html",
+    "title": "BNEF Style Report Template",
+    "section": "",
+    "text": "Which PJM and ERCOT regions show persistent price separation?\nHow much of that spread appears to reflect transmission congestion?\nDo high-renewable and low-net-load periods coincide with abnormal spread or negative pricing?\nWhat does this imply for transmission, storage, and modernization priorities?\n\n\n\n\n\nWhere are the most persistent nodal and zonal spreads?\nWhich nodes repeatedly rank near the top of congestion exposure?\nHow does PJM compare with ERCOT in spread persistence?\n\n\n\n\n\nHow closely do large spreads coincide with high congestion components?\nWhere does spread appear to be a strong congestion proxy?\nWhere should spread be interpreted more cautiously?\n\n\n\n\n\nDuring high-renewable periods, does congestion intensify or ease?\nDuring low-net-load periods, do negative prices become more frequent?\nWhich regions appear structurally sensitive to renewable buildout?\n\n\n\n\n\nWhich patterns suggest a transmission bottleneck worth upgrading?\nWhere could storage help absorb oversupply or reduce spread volatility?\nWhat broader modernization priorities emerge across the two markets?\n\n\n\n\n\nRaw market data sources\nCleaning and harmonization rules\nCongestion and spread metrics\nLimits of interpreting LMP spread as a congestion proxy"
+  },
+  {
+    "objectID": "reports/bnef_style_report_template.html#executive-summary",
+    "href": "reports/bnef_style_report_template.html#executive-summary",
+    "title": "BNEF Style Report Template",
+    "section": "",
+    "text": "Which PJM and ERCOT regions show persistent price separation?\nHow much of that spread appears to reflect transmission congestion?\nDo high-renewable and low-net-load periods coincide with abnormal spread or negative pricing?\nWhat does this imply for transmission, storage, and modernization priorities?"
+  },
+  {
+    "objectID": "reports/bnef_style_report_template.html#question-1-persistent-regional-price-separation",
+    "href": "reports/bnef_style_report_template.html#question-1-persistent-regional-price-separation",
+    "title": "BNEF Style Report Template",
+    "section": "",
+    "text": "Where are the most persistent nodal and zonal spreads?\nWhich nodes repeatedly rank near the top of congestion exposure?\nHow does PJM compare with ERCOT in spread persistence?"
+  },
+  {
+    "objectID": "reports/bnef_style_report_template.html#question-2-price-spread-as-congestion-signal",
+    "href": "reports/bnef_style_report_template.html#question-2-price-spread-as-congestion-signal",
+    "title": "BNEF Style Report Template",
+    "section": "",
+    "text": "How closely do large spreads coincide with high congestion components?\nWhere does spread appear to be a strong congestion proxy?\nWhere should spread be interpreted more cautiously?"
+  },
+  {
+    "objectID": "reports/bnef_style_report_template.html#question-3-renewable-output-net-load-and-abnormal-pricing",
+    "href": "reports/bnef_style_report_template.html#question-3-renewable-output-net-load-and-abnormal-pricing",
+    "title": "BNEF Style Report Template",
+    "section": "",
+    "text": "During high-renewable periods, does congestion intensify or ease?\nDuring low-net-load periods, do negative prices become more frequent?\nWhich regions appear structurally sensitive to renewable buildout?"
+  },
+  {
+    "objectID": "reports/bnef_style_report_template.html#question-4-investment-and-modernization-implications",
+    "href": "reports/bnef_style_report_template.html#question-4-investment-and-modernization-implications",
+    "title": "BNEF Style Report Template",
+    "section": "",
+    "text": "Which patterns suggest a transmission bottleneck worth upgrading?\nWhere could storage help absorb oversupply or reduce spread volatility?\nWhat broader modernization priorities emerge across the two markets?"
+  },
+  {
+    "objectID": "reports/bnef_style_report_template.html#methodology",
+    "href": "reports/bnef_style_report_template.html#methodology",
+    "title": "BNEF Style Report Template",
+    "section": "",
+    "text": "Raw market data sources\nCleaning and harmonization rules\nCongestion and spread metrics\nLimits of interpreting LMP spread as a congestion proxy"
+  },
+  {
+    "objectID": "data.html",
+    "href": "data.html",
+    "title": "PJM Data and Downloads",
+    "section": "",
+    "text": "The live ingestion layer is built around gridstatus, which provides a unified interface to:\n\nPJM LMP and load data\ninterconnection queue snapshots\n\nThe website itself publishes processed analytical layers, not full raw ISO dumps."
+  },
+  {
+    "objectID": "data.html#data-sources",
+    "href": "data.html#data-sources",
+    "title": "PJM Data and Downloads",
+    "section": "",
+    "text": "The live ingestion layer is built around gridstatus, which provides a unified interface to:\n\nPJM LMP and load data\ninterconnection queue snapshots\n\nThe website itself publishes processed analytical layers, not full raw ISO dumps."
+  },
+  {
+    "objectID": "data.html#downloads",
+    "href": "data.html#downloads",
+    "title": "PJM Data and Downloads",
+    "section": "Downloads",
+    "text": "Downloads\n\nMarket summary\nNode summary\nStress events\nRenewable impact\nHarmonized feature layer\nPJM map layer CSV\nPJM animation layer CSV\nLatest markdown report"
+  },
+  {
+    "objectID": "data.html#repo-notes",
+    "href": "data.html#repo-notes",
+    "title": "PJM Data and Downloads",
+    "section": "Repo notes",
+    "text": "Repo notes\nFor reproducibility, the Python source lives in the same repository as this Quarto site. The site is intended to be regenerated after the analysis pipeline refreshes the latest exports and maps."
+  },
+  {
+    "objectID": "methodology.html",
+    "href": "methodology.html",
+    "title": "PJM Methodology",
+    "section": "",
+    "text": "The analytical pipeline is:\n\ngridstatus download layer for PJM\nPJM-specific cleaning\nAnalytical harmonization into the working nodal schema\nFeature engineering\nCongestion metrics\nMap and report export"
+  },
+  {
+    "objectID": "methodology.html#pipeline-design",
+    "href": "methodology.html#pipeline-design",
+    "title": "PJM Methodology",
+    "section": "",
+    "text": "The analytical pipeline is:\n\ngridstatus download layer for PJM\nPJM-specific cleaning\nAnalytical harmonization into the working nodal schema\nFeature engineering\nCongestion metrics\nMap and report export"
+  },
+  {
+    "objectID": "methodology.html#core-data-fields",
+    "href": "methodology.html#core-data-fields",
+    "title": "PJM Methodology",
+    "section": "Core data fields",
+    "text": "Core data fields\nThe harmonized schema centers on:\n\ntimestamp\nnode_id\nnode_name\nlmp\nenergy\ncongestion\nloss\noptional renewable_mw, load_mw, zone, latitude, longitude"
+  },
+  {
+    "objectID": "methodology.html#congestion-metrics",
+    "href": "methodology.html#congestion-metrics",
+    "title": "PJM Methodology",
+    "section": "Congestion metrics",
+    "text": "Congestion metrics\n\n\n\n\n\n\n\n\nMetric\nPurpose\n\n\n\n\nabs_congestion\nDirect congestion intensity\n\n\nprice_separation\nMarket-wide node divergence in a given interval\n\n\nhub_lmp\nReference price used for node-to-hub comparisons\n\n\nnode_to_hub_spread\nLocal divergence from a configured market reference\n\n\npersistent_congestion_score\nComposite score for map prominence and screening\n\n\nnegative_price_flag\nAbnormal pricing indicator\n\n\nrenewable_penetration\nRenewable share proxy when load is available\n\n\nnet_load_mw\nLoad minus renewable generation"
+  },
+  {
+    "objectID": "methodology.html#hub-reference-logic",
+    "href": "methodology.html#hub-reference-logic",
+    "title": "PJM Methodology",
+    "section": "Hub reference logic",
+    "text": "Hub reference logic\nnode_to_hub_spread is now configuration-driven.\nThe pipeline first checks config/markets.yml for explicit PJM hub-reference rules. If a configured match is available, it is used as the reference LMP. If not, the code falls back to a heuristic hub detection rule and then, if needed, to market mean.\nThis hierarchy keeps the site usable with sample data while making the research definition of “hub” explicit and auditable."
+  },
+  {
+    "objectID": "methodology.html#publication-note",
+    "href": "methodology.html#publication-note",
+    "title": "PJM Methodology",
+    "section": "Publication note",
+    "text": "Publication note\nThis site is built with Quarto, but the interactive map HTML is generated by the Python pipeline. Quarto then copies those map artifacts into the published website."
+  },
+  {
+    "objectID": "notebooks/01_schema_checks.html",
+    "href": "notebooks/01_schema_checks.html",
+    "title": "Schema Checks",
+    "section": "",
+    "text": "Use this notebook to inspect raw PJM and ERCOT files and confirm they can be mapped into the shared nodal schema."
+  },
+  {
+    "objectID": "notebooks/03_ercot_exploration.html",
+    "href": "notebooks/03_ercot_exploration.html",
+    "title": "ERCOT Exploration",
+    "section": "",
+    "text": "Investigate nodal congestion, price spreads, and renewable-linked stress periods in ERCOT."
+  },
+  {
+    "objectID": "data/exports/report.html",
+    "href": "data/exports/report.html",
+    "title": "Final Report",
+    "section": "",
+    "text": "ERCOT: median nodal price separation is 10.40, median node-to-hub spread is 3.95, and average absolute congestion is 7.28 across 2 intervals.\nPJM: median nodal price separation is 8.50, median node-to-hub spread is 2.15, and average absolute congestion is 6.45 across 2 intervals.\nERCOT: West Export (ERCOT_B) is the top recurring congestion-exposed node with average absolute congestion of 12.90.\nPJM: Central Interface (PJM_B) is the top recurring congestion-exposed node with average absolute congestion of 11.40.\n\n\n\n\n\nERCOT: average absolute congestion is 7.28 while median price separation is 10.40 and median node-to-hub spread is 3.95, suggesting spread and congestion move together in the sample.\nPJM: average absolute congestion is 6.45 while median price separation is 8.50 and median node-to-hub spread is 2.15, suggesting spread and congestion move together in the sample.\nSpread is treated here as a congestion signal candidate rather than a definitive measure, because losses and market design effects can also contribute.\n\n\n\n\n\nERCOT: high-renewable intervals show 0.83 lower average absolute congestion than low-renewable intervals.\nPJM: high-renewable intervals show 2.17 lower average absolute congestion than low-renewable intervals.\nERCOT: negative price frequency is 0.0% in the current sample.\nPJM: negative price frequency is 0.0% in the current sample.\nStress-event intervals remain useful candidates for deeper low-net-load and renewable interaction checks:\nERCOT 2025-07-01T00:00:00+00:00: mean absolute congestion 7.70, price separation 8.40.\nPJM 2025-07-01T00:00:00+00:00: mean absolute congestion 7.53, price separation 7.60.\n\n\n\n\n\nPersistent high-spread nodes are candidate locations for transmission reinforcement or operational bottleneck review.\nIf future runs show repeated spread during renewable-rich intervals, those regions become stronger candidates for storage deployment.\nSustained nodal divergence across time would support broader grid modernization investment where renewable growth is outrunning transfer capability."
+  },
+  {
+    "objectID": "data/exports/report.html#question-1-which-regions-show-persistent-price-separation",
+    "href": "data/exports/report.html#question-1-which-regions-show-persistent-price-separation",
+    "title": "Final Report",
+    "section": "",
+    "text": "ERCOT: median nodal price separation is 10.40, median node-to-hub spread is 3.95, and average absolute congestion is 7.28 across 2 intervals.\nPJM: median nodal price separation is 8.50, median node-to-hub spread is 2.15, and average absolute congestion is 6.45 across 2 intervals.\nERCOT: West Export (ERCOT_B) is the top recurring congestion-exposed node with average absolute congestion of 12.90.\nPJM: Central Interface (PJM_B) is the top recurring congestion-exposed node with average absolute congestion of 11.40."
+  },
+  {
+    "objectID": "data/exports/report.html#question-2-how-much-of-the-spread-looks-like-congestion",
+    "href": "data/exports/report.html#question-2-how-much-of-the-spread-looks-like-congestion",
+    "title": "Final Report",
+    "section": "",
+    "text": "ERCOT: average absolute congestion is 7.28 while median price separation is 10.40 and median node-to-hub spread is 3.95, suggesting spread and congestion move together in the sample.\nPJM: average absolute congestion is 6.45 while median price separation is 8.50 and median node-to-hub spread is 2.15, suggesting spread and congestion move together in the sample.\nSpread is treated here as a congestion signal candidate rather than a definitive measure, because losses and market design effects can also contribute."
+  },
+  {
+    "objectID": "data/exports/report.html#question-3-do-high-renewable-or-low-net-load-periods-show-abnormal-spreads-or-negative-prices",
+    "href": "data/exports/report.html#question-3-do-high-renewable-or-low-net-load-periods-show-abnormal-spreads-or-negative-prices",
+    "title": "Final Report",
+    "section": "",
+    "text": "ERCOT: high-renewable intervals show 0.83 lower average absolute congestion than low-renewable intervals.\nPJM: high-renewable intervals show 2.17 lower average absolute congestion than low-renewable intervals.\nERCOT: negative price frequency is 0.0% in the current sample.\nPJM: negative price frequency is 0.0% in the current sample.\nStress-event intervals remain useful candidates for deeper low-net-load and renewable interaction checks:\nERCOT 2025-07-01T00:00:00+00:00: mean absolute congestion 7.70, price separation 8.40.\nPJM 2025-07-01T00:00:00+00:00: mean absolute congestion 7.53, price separation 7.60."
+  },
+  {
+    "objectID": "data/exports/report.html#question-4-what-are-the-implications-for-transmission-storage-and-modernization",
+    "href": "data/exports/report.html#question-4-what-are-the-implications-for-transmission-storage-and-modernization",
+    "title": "Final Report",
+    "section": "",
+    "text": "Persistent high-spread nodes are candidate locations for transmission reinforcement or operational bottleneck review.\nIf future runs show repeated spread during renewable-rich intervals, those regions become stronger candidates for storage deployment.\nSustained nodal divergence across time would support broader grid modernization investment where renewable growth is outrunning transfer capability."
+  },
+  {
+    "objectID": "slides/outline.html",
+    "href": "slides/outline.html",
+    "title": "Slide Outline",
+    "section": "",
+    "text": "Slide Outline\n\nResearch question and motivation\nPJM and ERCOT market context\nData sources and harmonized schema\nCongestion metrics and methodology\nMarket-level findings\nHigh-renewable versus low-renewable comparison\nGeographic and nodal hotspots\nImplications for transmission investment\nOpen questions and next steps"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Grid Congestion in PJM",
+    "section": "",
+    "text": "Research website\nThis site publishes the PJM-focused output of the us-grid-congestion-monitor pipeline. It uses nodal electricity price data to study how renewable buildout interacts with transmission constraints in PJM and what those patterns may imply for transmission investment, storage deployment, and grid modernization.\nThe project is organized around four PJM questions:\n::: :::"
+  },
+  {
+    "objectID": "index.html#what-this-site-contains",
+    "href": "index.html#what-this-site-contains",
+    "title": "Grid Congestion in PJM",
+    "section": "What this site contains",
+    "text": "What this site contains\n\n\nA narrative summary of the four core research questions\nInteractive PJM congestion maps\nA node-to-hub spread animation layer\nMethodology notes on harmonization, hub references, and congestion metrics\nDownload links for map-ready and report-ready exports"
+  },
+  {
+    "objectID": "index.html#current-project-framing",
+    "href": "index.html#current-project-framing",
+    "title": "Grid Congestion in PJM",
+    "section": "Current project framing",
+    "text": "Current project framing\nThe published analysis pipeline follows this sequence:\n\nDownload PJM raw ISO data through gridstatus\nClean PJM market-specific schema\nHarmonize PJM nodal observations into the analytical frame\nBuild congestion, spread, renewable, and hub-reference features\nGenerate charts, maps, export packs, and a report\n\n\nThe website assumes the latest site artifacts are generated by the Python pipeline before publication. On GitHub Pages, Quarto renders the site shell while existing map HTML and CSV exports are copied into the published output."
+  },
+  {
+    "objectID": "index.html#findings-.section-anchorkey-findings",
+    "href": "index.html#findings-.section-anchorkey-findings",
+    "title": "Grid Congestion in PJM",
+    "section": "{#findings .section-anchor}Key Findings",
+    "text": "{#findings .section-anchor}Key Findings\nThis project is designed around four analytical questions rather than around raw pipeline stages. That matters because the same metric can play different roles depending on whether we are diagnosing a PJM bottleneck, testing a hypothesis about renewable buildout, or framing a transmission implication.\n\n\n1. Persistent price separation\nCore indicators:\n\nprice_separation\nabs_node_to_hub_spread\npersistent_congestion_score\n\n\n\n2. Spread as congestion signal\nCore indicators:\n\navg_abs_congestion\ncongestion_share_of_lmp\noverlap between large spread and high congestion intervals\n\n\n\n3. Renewable and net-load stress\nCore indicators:\n\nrenewable_penetration\nnet_load_mw\nnegative_price_flag\n\n\n\n4. Investment implications\nCore interpretation:\n\ntransmission upgrade candidates\nstorage siting opportunities\nmodernization priorities where divergence persists\n\n\n\nThe site treats spread as a candidate congestion signal, not as automatic proof of congestion. A large node-to-hub spread becomes more convincing when it coincides with elevated congestion components, persistence across intervals, and recurring stress conditions in the same location."
+  },
+  {
+    "objectID": "index.html#maps-.section-anchorinteractive-maps",
+    "href": "index.html#maps-.section-anchorinteractive-maps",
+    "title": "Grid Congestion in PJM",
+    "section": "{#maps .section-anchor}Interactive Maps",
+    "text": "{#maps .section-anchor}Interactive Maps\n\nPJM congestion map\n\n\n\n\nNode-to-hub spread animation\n\n\n\n\nUse the toggle in the main maps to switch between congestion intensity and node-to-hub spread.\nBubble size reflects a persistent congestion score rather than a single-interval spike.\nHover panels show zone, spread, congestion, negative-price frequency, and hub-reference source.\nThe animation layer helps distinguish structural bottlenecks from short-lived price events."
+  },
+  {
+    "objectID": "index.html#methodology-.section-anchormethodology",
+    "href": "index.html#methodology-.section-anchormethodology",
+    "title": "Grid Congestion in PJM",
+    "section": "{#methodology .section-anchor}Methodology",
+    "text": "{#methodology .section-anchor}Methodology\n\nPipeline design\nThe analytical pipeline is:\n\ngridstatus download layer for PJM\nPJM-specific cleaning\nAnalytical harmonization into the working nodal schema\nFeature engineering\nCongestion metrics\nMap and report export\n\n\n\nCore data fields\nThe harmonized schema centers on:\n\ntimestamp\nnode_id\nnode_name\nlmp\nenergy\ncongestion\nloss\noptional renewable_mw, load_mw, zone, latitude, longitude\n\n\n\nCongestion metrics\n\n\n\n\n\n\n\n\nMetric\nPurpose\n\n\n\n\nabs_congestion\nDirect congestion intensity\n\n\nprice_separation\nMarket-wide node divergence in a given interval\n\n\nhub_lmp\nReference price used for node-to-hub comparisons\n\n\nnode_to_hub_spread\nLocal divergence from a configured market reference\n\n\npersistent_congestion_score\nComposite score for map prominence and screening\n\n\nnegative_price_flag\nAbnormal pricing indicator\n\n\nrenewable_penetration\nRenewable share proxy when load is available\n\n\nnet_load_mw\nLoad minus renewable generation\n\n\n\n\n\n\nHub reference logic\nnode_to_hub_spread is configuration-driven. The pipeline first checks config/markets.yml for explicit PJM hub-reference rules. If a configured match is available, it is used as the reference LMP. If not, the code falls back to heuristic hub detection and then, if needed, to market mean."
+  },
+  {
+    "objectID": "index.html#data-downloads-.section-anchordata-and-downloads",
+    "href": "index.html#data-downloads-.section-anchordata-and-downloads",
+    "title": "Grid Congestion in PJM",
+    "section": "{#data-downloads .section-anchor}Data and Downloads",
+    "text": "{#data-downloads .section-anchor}Data and Downloads\nThe live ingestion layer is built around gridstatus, which provides a unified interface to PJM LMP, load, and interconnection queue data. The website publishes processed analytical layers rather than full raw ISO dumps.\n\nMarket summary\nNode summary\nStress events\nRenewable impact\nHarmonized feature layer\nPJM map layer CSV\nPJM animation layer CSV\nLatest markdown report"
+  },
+  {
+    "objectID": "maps.html#node-to-hub-spread-animation",
+    "href": "maps.html#node-to-hub-spread-animation",
+    "title": "PJM Maps",
+    "section": "Node-to-hub spread animation",
+    "text": "Node-to-hub spread animation"
+  },
+  {
+    "objectID": "maps.html#how-to-use-the-maps",
+    "href": "maps.html#how-to-use-the-maps",
+    "title": "PJM Maps",
+    "section": "How to use the maps",
+    "text": "How to use the maps\n\n\nUse the toggle in the main maps to switch between congestion intensity and node-to-hub spread.\nBubble size reflects a persistent congestion score rather than a single-interval spike.\nHover panels show zone, spread, congestion, negative-price frequency, and hub-reference source.\nThe animation layer helps distinguish structural bottlenecks from short-lived price events."
+  },
+  {
+    "objectID": "maps.html#download-the-map-layers",
+    "href": "maps.html#download-the-map-layers",
+    "title": "PJM Maps",
+    "section": "Download the map layers",
+    "text": "Download the map layers\n\nPJM map layer CSV\nPJM animation layer CSV"
+  },
+  {
+    "objectID": "outputs/sample_run/report.html",
+    "href": "outputs/sample_run/report.html",
+    "title": "Grid Congestion Analysis Report",
+    "section": "",
+    "text": "ERCOT: average absolute congestion was 7.28, with median nodal price separation of 10.40 across 2 intervals.\nPJM: average absolute congestion was 6.45, with median nodal price separation of 8.50 across 2 intervals.\n\n\n\n\n\n\n\nWest Export (ERCOT_B) ranked #1 with average absolute congestion of 12.90.\nHouston Load (ERCOT_C) ranked #2 with average absolute congestion of 6.45.\nNorth Hub (ERCOT_A) ranked #3 with average absolute congestion of 2.50. ### PJM\nCentral Interface (PJM_B) ranked #1 with average absolute congestion of 11.40.\nWest Hub (PJM_A) ranked #2 with average absolute congestion of 5.05.\nCoastal Pocket (PJM_C) ranked #3 with average absolute congestion of 2.90.\n\n\n\n\n\n\nERCOT: high-renewable intervals showed 0.83 lower average absolute congestion than low-renewable intervals.\nPJM: high-renewable intervals showed 2.17 lower average absolute congestion than low-renewable intervals.\n\n\n\n\n\nERCOT at 2025-07-01T00:00:00+00:00: mean absolute congestion reached 7.70 with price separation of 8.40.\nPJM at 2025-07-01T00:00:00+00:00: mean absolute congestion reached 7.53 with price separation of 7.60."
+  },
+  {
+    "objectID": "outputs/sample_run/report.html#market-overview",
+    "href": "outputs/sample_run/report.html#market-overview",
+    "title": "Grid Congestion Analysis Report",
+    "section": "",
+    "text": "ERCOT: average absolute congestion was 7.28, with median nodal price separation of 10.40 across 2 intervals.\nPJM: average absolute congestion was 6.45, with median nodal price separation of 8.50 across 2 intervals."
+  },
+  {
+    "objectID": "outputs/sample_run/report.html#most-exposed-nodes",
+    "href": "outputs/sample_run/report.html#most-exposed-nodes",
+    "title": "Grid Congestion Analysis Report",
+    "section": "",
+    "text": "West Export (ERCOT_B) ranked #1 with average absolute congestion of 12.90.\nHouston Load (ERCOT_C) ranked #2 with average absolute congestion of 6.45.\nNorth Hub (ERCOT_A) ranked #3 with average absolute congestion of 2.50. ### PJM\nCentral Interface (PJM_B) ranked #1 with average absolute congestion of 11.40.\nWest Hub (PJM_A) ranked #2 with average absolute congestion of 5.05.\nCoastal Pocket (PJM_C) ranked #3 with average absolute congestion of 2.90."
+  },
+  {
+    "objectID": "outputs/sample_run/report.html#renewable-interaction",
+    "href": "outputs/sample_run/report.html#renewable-interaction",
+    "title": "Grid Congestion Analysis Report",
+    "section": "",
+    "text": "ERCOT: high-renewable intervals showed 0.83 lower average absolute congestion than low-renewable intervals.\nPJM: high-renewable intervals showed 2.17 lower average absolute congestion than low-renewable intervals."
+  },
+  {
+    "objectID": "outputs/sample_run/report.html#stress-events",
+    "href": "outputs/sample_run/report.html#stress-events",
+    "title": "Grid Congestion Analysis Report",
+    "section": "",
+    "text": "ERCOT at 2025-07-01T00:00:00+00:00: mean absolute congestion reached 7.70 with price separation of 8.40.\nPJM at 2025-07-01T00:00:00+00:00: mean absolute congestion reached 7.53 with price separation of 7.60."
+  },
+  {
+    "objectID": "notebooks/04_report_charts.html",
+    "href": "notebooks/04_report_charts.html",
+    "title": "Report Charts",
+    "section": "",
+    "text": "Build publication-ready visuals for the final report and slide deck."
+  },
+  {
+    "objectID": "notebooks/02_pjm_exploration.html",
+    "href": "notebooks/02_pjm_exploration.html",
+    "title": "PJM Exploration",
+    "section": "",
+    "text": "Investigate nodal congestion, price spreads, and renewable-linked stress periods in PJM."
+  },
+  {
+    "objectID": "findings.html",
+    "href": "findings.html",
+    "title": "PJM Findings",
+    "section": "",
+    "text": "This project is designed around four analytical questions rather than around raw pipeline stages. That matters because the same metric can play different roles depending on whether we are diagnosing a PJM bottleneck, testing a hypothesis about renewable buildout, or framing a transmission implication.\n\n\n\nCore indicators:\n\nprice_separation\nabs_node_to_hub_spread\npersistent_congestion_score\n\n\n\n\nCore indicators:\n\navg_abs_congestion\ncongestion_share_of_lmp\noverlap between large spread and high congestion intervals\n\n\n\n\nCore indicators:\n\nrenewable_penetration\nnet_load_mw\nnegative_price_flag\n\n\n\n\nCore interpretation:\n\ntransmission upgrade candidates\nstorage siting opportunities\nmodernization priorities where divergence persists"
+  },
+  {
+    "objectID": "findings.html#four-question-structure",
+    "href": "findings.html#four-question-structure",
+    "title": "PJM Findings",
+    "section": "",
+    "text": "This project is designed around four analytical questions rather than around raw pipeline stages. That matters because the same metric can play different roles depending on whether we are diagnosing a PJM bottleneck, testing a hypothesis about renewable buildout, or framing a transmission implication.\n\n\n\nCore indicators:\n\nprice_separation\nabs_node_to_hub_spread\npersistent_congestion_score\n\n\n\n\nCore indicators:\n\navg_abs_congestion\ncongestion_share_of_lmp\noverlap between large spread and high congestion intervals\n\n\n\n\nCore indicators:\n\nrenewable_penetration\nnet_load_mw\nnegative_price_flag\n\n\n\n\nCore interpretation:\n\ntransmission upgrade candidates\nstorage siting opportunities\nmodernization priorities where divergence persists"
+  },
+  {
+    "objectID": "findings.html#reading-the-maps",
+    "href": "findings.html#reading-the-maps",
+    "title": "PJM Findings",
+    "section": "Reading the maps",
+    "text": "Reading the maps\nThe PJM congestion maps are intentionally product-like. Bubble size tracks a persistent congestion score, while the color layer can be switched between:\n\naverage absolute congestion\naverage absolute node-to-hub spread\n\nHover panels are designed to answer the practical question: why is this node worth looking at?"
+  },
+  {
+    "objectID": "findings.html#narrative-interpretation",
+    "href": "findings.html#narrative-interpretation",
+    "title": "PJM Findings",
+    "section": "Narrative interpretation",
+    "text": "Narrative interpretation\nThe site treats spread as a candidate congestion signal, not as automatic proof of congestion. A large node-to-hub spread becomes more convincing when it coincides with:\n\nelevated congestion components in LMP\npersistence across intervals\nrecurring stress conditions in the same location\n\nThat framing helps separate structural bottlenecks from one-off price events."
+  },
+  {
+    "objectID": "findings.html#latest-generated-report",
+    "href": "findings.html#latest-generated-report",
+    "title": "PJM Findings",
+    "section": "Latest generated report",
+    "text": "Latest generated report\nThe latest PJM pipeline report is available as a raw artifact here: final_report.md"
+  },
+  {
+    "objectID": "reports/final_report.html",
+    "href": "reports/final_report.html",
+    "title": "Final Report",
+    "section": "",
+    "text": "ERCOT: median nodal price separation is 10.40, median node-to-hub spread is 3.95, and average absolute congestion is 7.28 across 2 intervals.\nPJM: median nodal price separation is 8.50, median node-to-hub spread is 2.15, and average absolute congestion is 6.45 across 2 intervals.\nERCOT: West Export (ERCOT_B) is the top recurring congestion-exposed node with average absolute congestion of 12.90.\nPJM: Central Interface (PJM_B) is the top recurring congestion-exposed node with average absolute congestion of 11.40.\n\n\n\n\n\nERCOT: average absolute congestion is 7.28 while median price separation is 10.40 and median node-to-hub spread is 3.95, suggesting spread and congestion move together in the sample.\nPJM: average absolute congestion is 6.45 while median price separation is 8.50 and median node-to-hub spread is 2.15, suggesting spread and congestion move together in the sample.\nSpread is treated here as a congestion signal candidate rather than a definitive measure, because losses and market design effects can also contribute.\n\n\n\n\n\nERCOT: high-renewable intervals show 0.83 lower average absolute congestion than low-renewable intervals.\nPJM: high-renewable intervals show 2.17 lower average absolute congestion than low-renewable intervals.\nERCOT: negative price frequency is 0.0% in the current sample.\nPJM: negative price frequency is 0.0% in the current sample.\nStress-event intervals remain useful candidates for deeper low-net-load and renewable interaction checks:\nERCOT 2025-07-01T00:00:00+00:00: mean absolute congestion 7.70, price separation 8.40.\nPJM 2025-07-01T00:00:00+00:00: mean absolute congestion 7.53, price separation 7.60.\n\n\n\n\n\nPersistent high-spread nodes are candidate locations for transmission reinforcement or operational bottleneck review.\nIf future runs show repeated spread during renewable-rich intervals, those regions become stronger candidates for storage deployment.\nSustained nodal divergence across time would support broader grid modernization investment where renewable growth is outrunning transfer capability."
+  },
+  {
+    "objectID": "reports/final_report.html#question-1-which-regions-show-persistent-price-separation",
+    "href": "reports/final_report.html#question-1-which-regions-show-persistent-price-separation",
+    "title": "Final Report",
+    "section": "",
+    "text": "ERCOT: median nodal price separation is 10.40, median node-to-hub spread is 3.95, and average absolute congestion is 7.28 across 2 intervals.\nPJM: median nodal price separation is 8.50, median node-to-hub spread is 2.15, and average absolute congestion is 6.45 across 2 intervals.\nERCOT: West Export (ERCOT_B) is the top recurring congestion-exposed node with average absolute congestion of 12.90.\nPJM: Central Interface (PJM_B) is the top recurring congestion-exposed node with average absolute congestion of 11.40."
+  },
+  {
+    "objectID": "reports/final_report.html#question-2-how-much-of-the-spread-looks-like-congestion",
+    "href": "reports/final_report.html#question-2-how-much-of-the-spread-looks-like-congestion",
+    "title": "Final Report",
+    "section": "",
+    "text": "ERCOT: average absolute congestion is 7.28 while median price separation is 10.40 and median node-to-hub spread is 3.95, suggesting spread and congestion move together in the sample.\nPJM: average absolute congestion is 6.45 while median price separation is 8.50 and median node-to-hub spread is 2.15, suggesting spread and congestion move together in the sample.\nSpread is treated here as a congestion signal candidate rather than a definitive measure, because losses and market design effects can also contribute."
+  },
+  {
+    "objectID": "reports/final_report.html#question-3-do-high-renewable-or-low-net-load-periods-show-abnormal-spreads-or-negative-prices",
+    "href": "reports/final_report.html#question-3-do-high-renewable-or-low-net-load-periods-show-abnormal-spreads-or-negative-prices",
+    "title": "Final Report",
+    "section": "",
+    "text": "ERCOT: high-renewable intervals show 0.83 lower average absolute congestion than low-renewable intervals.\nPJM: high-renewable intervals show 2.17 lower average absolute congestion than low-renewable intervals.\nERCOT: negative price frequency is 0.0% in the current sample.\nPJM: negative price frequency is 0.0% in the current sample.\nStress-event intervals remain useful candidates for deeper low-net-load and renewable interaction checks:\nERCOT 2025-07-01T00:00:00+00:00: mean absolute congestion 7.70, price separation 8.40.\nPJM 2025-07-01T00:00:00+00:00: mean absolute congestion 7.53, price separation 7.60."
+  },
+  {
+    "objectID": "reports/final_report.html#question-4-what-are-the-implications-for-transmission-storage-and-modernization",
+    "href": "reports/final_report.html#question-4-what-are-the-implications-for-transmission-storage-and-modernization",
+    "title": "Final Report",
+    "section": "",
+    "text": "Persistent high-spread nodes are candidate locations for transmission reinforcement or operational bottleneck review.\nIf future runs show repeated spread during renewable-rich intervals, those regions become stronger candidates for storage deployment.\nSustained nodal divergence across time would support broader grid modernization investment where renewable growth is outrunning transfer capability."
+  }
+]

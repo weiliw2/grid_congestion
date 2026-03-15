@@ -16,6 +16,7 @@ from io_utils import ensure_dir, write_csv
 class MetricConfig:
     stress_event_quantile: float = 0.95
     top_nodes_per_market: int = 10
+    hub_reference_map: dict[str, dict[str, object]] | None = None
 
 
 def summarize_markets(df: pd.DataFrame) -> pd.DataFrame:
@@ -189,7 +190,7 @@ def run_analysis(df: pd.DataFrame, output_dir: str | Path, config: MetricConfig 
     config = config or MetricConfig()
     export_dir = ensure_dir(output_dir)
 
-    engineered = add_congestion_features(df)
+    engineered = add_congestion_features(df, hub_reference_map=config.hub_reference_map)
     market_summary = summarize_markets(engineered)
     node_summary = summarize_nodes(engineered, config.top_nodes_per_market)
     renewable_summary = renewable_impact(engineered)

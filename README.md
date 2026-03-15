@@ -1,25 +1,25 @@
-# us-grid-congestion-monitor
+# pjm-grid-congestion-monitor
 
-This repository analyzes grid congestion patterns in PJM and ERCOT using nodal electricity price data. The goal is to understand how rapid renewable expansion interacts with transmission constraints and what those patterns may imply for grid investment, congestion management, and modernization.
+This repository currently focuses on grid congestion patterns in PJM using nodal electricity price data. The goal is to understand how renewable expansion interacts with transmission constraints and what those patterns may imply for grid investment, congestion management, and modernization.
 
-`gridstatus` is the core data-ingestion layer for live market pulls. The project uses it to access a unified API across PJM and ERCOT for LMP, load, and interconnection queue data, while keeping market-specific cleaning and cross-market harmonization inside this repo.
+`gridstatus` is the core data-ingestion layer for live market pulls. The project uses it to access PJM LMP, load, and interconnection queue data while keeping market-specific cleaning and harmonization inside this repo.
 
 ## Core research questions
 
 This project is organized around four questions:
 
-1. Which PJM and ERCOT regions show persistent price separation?
+1. Which PJM regions show persistent price separation?
 2. To what extent can observed nodal price spread be interpreted as a congestion signal?
 3. Are abnormal price spread and negative prices more common during high-renewable or low-net-load intervals?
-4. What do these patterns imply for transmission investment, storage deployment, and grid modernization?
+4. What do these patterns imply for transmission investment, storage deployment, and grid modernization in PJM?
 
 ## Workflow
 
 The pipeline is organized around these stages:
 
-1. Download or stage raw market data into `data/raw/pjm` and `data/raw/ercot`.
-2. Clean each market into a shared nodal schema.
-3. Harmonize the combined dataset and engineer congestion features.
+1. Download or stage raw market data into `data/raw/pjm`.
+2. Clean PJM data into the shared nodal schema.
+3. Harmonize the dataset and engineer congestion features.
 4. Quantify persistent price separation and congestion-linked spreads.
 5. Test whether high-renewable and low-net-load intervals coincide with abnormal spreads or negative prices.
 6. Export summaries, charts, map-ready tables, Excel-ready tables, and a narrative report.
@@ -31,7 +31,7 @@ The core analysis expects these columns:
 | column | description |
 | --- | --- |
 | `timestamp` | interval timestamp |
-| `market` | `PJM` or `ERCOT` |
+| `market` | `PJM` |
 | `node_id` | unique node identifier |
 | `node_name` | readable node name |
 | `lmp` | nodal locational marginal price |
@@ -66,9 +66,37 @@ PYTHONPATH=src python run_pipeline.py \
   --download-live \
   --start 2025-07-01 \
   --end 2025-07-03 \
-  --markets PJM,ERCOT \
+  --markets PJM \
   --pjm-market REAL_TIME_HOURLY
 ```
+
+## Website publishing
+
+This repo now includes a Quarto website configured for GitHub Pages.
+
+Local workflow:
+
+```bash
+PYTHONPATH=src python run_pipeline.py --input examples/sample_nodal_prices.csv
+quarto render
+```
+
+GitHub workflow:
+
+1. Push the repository to GitHub.
+2. In GitHub, go to `Settings -> Pages` and set the source to `GitHub Actions`.
+3. In `Settings -> Actions -> General`, enable `Read and write permissions` for workflows.
+4. Push to `main` to trigger [.github/workflows/publish.yml](/Users/weilynnw/grid_congestion/.github/workflows/publish.yml).
+
+The Quarto site source files live at the repo root:
+
+- [_quarto.yml](/Users/weilynnw/grid_congestion/_quarto.yml)
+- [index.qmd](/Users/weilynnw/grid_congestion/index.qmd)
+- [findings.qmd](/Users/weilynnw/grid_congestion/findings.qmd)
+- [maps.qmd](/Users/weilynnw/grid_congestion/maps.qmd)
+- [methodology.qmd](/Users/weilynnw/grid_congestion/methodology.qmd)
+- [data.qmd](/Users/weilynnw/grid_congestion/data.qmd)
+- [styles.css](/Users/weilynnw/grid_congestion/styles.css)
 
 Outputs are written to:
 
@@ -82,9 +110,6 @@ Raw `gridstatus` extracts are also written to:
 - `data/raw/pjm/pjm_lmp_raw.csv`
 - `data/raw/pjm/pjm_load_raw.csv`
 - `data/raw/pjm/pjm_interconnection_queue.csv`
-- `data/raw/ercot/ercot_lmp_raw.csv`
-- `data/raw/ercot/ercot_load_raw.csv`
-- `data/raw/ercot/ercot_interconnection_queue.csv`
 
 ## Analytical framing
 
@@ -146,8 +171,8 @@ The repo includes:
 
 - working schema validation and harmonization
 - congestion feature engineering and summary metrics
-- a pipeline runner for sample or staged CSV inputs
-- `gridstatus`-based live download support for PJM and ERCOT
+- a pipeline runner for PJM sample or staged CSV inputs
+- `gridstatus`-based live download support for PJM
 - placeholder download, chart, map, and export modules for future market-specific expansion
 - starter notebooks, tests, report templates, and slide outline
 

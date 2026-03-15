@@ -17,7 +17,7 @@ if str(SRC) not in sys.path:
 from charts import build_hourly_profile, build_monthly_profile, save_placeholder_figure
 from clean_ercot import clean_ercot
 from clean_pjm import clean_pjm
-from config.settings import load_settings
+from config.settings import load_market_config, load_settings
 from congestion_metrics import MetricConfig, run_analysis
 from download_ercot import download_ercot_dataset
 from download_pjm import download_pjm_dataset
@@ -96,6 +96,12 @@ def _load_source_data(args: argparse.Namespace, settings) -> pd.DataFrame:
 def main() -> None:
     args = build_parser().parse_args()
     settings = load_settings()
+    market_config = load_market_config().get("markets", {})
+    hub_reference_map = {
+        market: config["hub_reference"]
+        for market, config in market_config.items()
+        if isinstance(config, dict) and "hub_reference" in config
+    }
     harmonized = _load_source_data(args, settings)
 
     ensure_dir(settings.processed_dir)
@@ -110,6 +116,7 @@ def main() -> None:
         config=MetricConfig(
             stress_event_quantile=settings.stress_event_quantile,
             top_nodes_per_market=settings.top_nodes_per_market,
+            hub_reference_map=hub_reference_map,
         ),
     )
 

@@ -193,11 +193,11 @@ def write_market_map_html(df: pd.DataFrame, market: str, output_path: str | Path
     )
     fig.update_layout(
         mapbox={"style": map_style, "center": {"lat": center["lat"], "lon": center["lon"]}, "zoom": center["zoom"]},
-        margin={"l": 20, "r": 20, "t": 74, "b": 20},
+        margin={"l": 20, "r": 20, "t": 150, "b": 20},
         paper_bgcolor="#f7f1e5",
         plot_bgcolor="#f7f1e5",
         title={
-            "text": f"{market} Congestion Map<br><sup>Bubble size reflects persistent congestion score; toggle between congestion and node-to-hub spread.</sup>",
+            "text": f"{market} Congestion Map<br><sup>Bubble size reflects persistent congestion score.</sup>",
             "x": 0.03,
             "xanchor": "left",
             "font": {"family": "Georgia, serif", "size": 24, "color": "#3a2214"},
@@ -208,9 +208,10 @@ def write_market_map_html(df: pd.DataFrame, market: str, output_path: str | Path
                 "type": "buttons",
                 "direction": "right",
                 "x": 0.03,
-                "y": 1.02,
+                "y": 1.14,
                 "xanchor": "left",
                 "yanchor": "bottom",
+                "pad": {"r": 8, "t": 6, "b": 6},
                 "bgcolor": "#efe1c6",
                 "bordercolor": "#c8a97e",
                 "buttons": [

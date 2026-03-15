@@ -1,0 +1,25 @@
+---
+title: "PJM Maps"
+---
+
+## PJM congestion map
+
+<iframe class="map-frame" src="maps/pjm_congestion_map.html" title="PJM congestion map"></iframe>
+
+## Node-to-hub spread animation
+
+<iframe class="map-frame" src="maps/spread_animation.html" title="Node-to-hub spread animation"></iframe>
+
+## How to use the maps
+
+::: {.section-band}
+- Use the toggle in the main maps to switch between congestion intensity and node-to-hub spread.
+- Bubble size reflects a persistent congestion score rather than a single-interval spike.
+- Hover panels show zone, spread, congestion, negative-price frequency, and hub-reference source.
+- The animation layer helps distinguish structural bottlenecks from short-lived price events.
+:::
+
+## Download the map layers
+
+- [PJM map layer CSV](data/exports/pjm_map_layer.csv)
+- [PJM animation layer CSV](data/exports/pjm_animation_layer.csv)

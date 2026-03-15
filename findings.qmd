@@ -1,0 +1,68 @@
+---
+title: "PJM Findings"
+---
+
+## Four-question structure
+
+This project is designed around four analytical questions rather than around raw pipeline stages. That matters because the same metric can play different roles depending on whether we are diagnosing a PJM bottleneck, testing a hypothesis about renewable buildout, or framing a transmission implication.
+
+::: {.map-grid}
+::: {.finding-card}
+### 1. Persistent price separation
+Core indicators:
+
+- `price_separation`
+- `abs_node_to_hub_spread`
+- `persistent_congestion_score`
+:::
+
+::: {.finding-card}
+### 2. Spread as congestion signal
+Core indicators:
+
+- `avg_abs_congestion`
+- `congestion_share_of_lmp`
+- overlap between large spread and high congestion intervals
+:::
+
+::: {.finding-card}
+### 3. Renewable and net-load stress
+Core indicators:
+
+- `renewable_penetration`
+- `net_load_mw`
+- `negative_price_flag`
+:::
+
+::: {.finding-card}
+### 4. Investment implications
+Core interpretation:
+
+- transmission upgrade candidates
+- storage siting opportunities
+- modernization priorities where divergence persists
+:::
+:::
+
+## Reading the maps
+
+The PJM congestion maps are intentionally product-like. Bubble size tracks a persistent congestion score, while the color layer can be switched between:
+
+- average absolute congestion
+- average absolute node-to-hub spread
+
+Hover panels are designed to answer the practical question: *why is this node worth looking at?*
+
+## Narrative interpretation
+
+The site treats **spread as a candidate congestion signal**, not as automatic proof of congestion. A large node-to-hub spread becomes more convincing when it coincides with:
+
+- elevated congestion components in LMP
+- persistence across intervals
+- recurring stress conditions in the same location
+
+That framing helps separate structural bottlenecks from one-off price events.
+
+## Latest generated report
+
+The latest PJM pipeline report is available as a raw artifact here: [final_report.md](reports/final_report.md)

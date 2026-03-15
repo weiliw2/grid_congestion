@@ -18,3 +18,6 @@ figures/*.png
 maps/*.html
 reports/final_report.md
 
+
+/.quarto/
+**/*.quarto_ipynb
