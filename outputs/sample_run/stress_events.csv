@@ -1,0 +1,3 @@
+market,timestamp,mean_abs_congestion,max_abs_congestion,price_separation,top_node
+ERCOT,2025-07-01 00:00:00+00:00,7.7,12.4,8.399999999999999,North Hub
+PJM,2025-07-01 00:00:00+00:00,7.533333333333334,11.7,7.600000000000001,West Hub

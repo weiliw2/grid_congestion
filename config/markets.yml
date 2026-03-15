@@ -1,0 +1,12 @@
+markets:
+  PJM:
+    timezone: America/New_York
+    raw_subdir: pjm
+    interval_minutes: 60
+    notes: PJM nodal data should be normalized to a standard hourly timestamp.
+  ERCOT:
+    timezone: America/Chicago
+    raw_subdir: ercot
+    interval_minutes: 60
+    notes: ERCOT settlement point or node data should be harmonized into the shared schema.
+
